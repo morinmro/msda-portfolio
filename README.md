@@ -43,7 +43,7 @@ Projects in [`ai-assisted/`](ai-assisted/) were revised with Claude. Each one li
 
 | Project | Revises | What's new |
 |---|---|---|
-| [**Forecasting US Electricity Prices**](ai-assisted/electricity-price-forecast/) | [D214 capstone](D214-capstone-electricity-price-forecast/) | Builds on the original with a rolling-origin backtest of SARIMA, exponential smoothing and simple baselines across 25 forecast origins. It shows where each method works best: statistical models for the first few months, simple trend methods further out. |
+| [**Forecasting US Electricity Prices**](ai-assisted/electricity-price-forecast/) | [D214 capstone](D214-capstone-electricity-price-forecast/) | Builds on the original with a rolling-origin backtest of SARIMA, exponential smoothing and simple baselines across 25 forecast origins. It finds that a simple, fixed SARIMA is the most reliable method, checks the forecasts against seven months of newer data, and tests natural gas prices as a driver. |
 
 ## Repository layout
 

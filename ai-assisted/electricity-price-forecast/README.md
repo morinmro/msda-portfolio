@@ -26,6 +26,7 @@
 - **The original hypothesis (MAPE under 10%) holds for every model,** including the simplest baseline, which is why the comparison between models is the more informative result.
 - Seasonality is weak (about 3.5% from trough to peak). Most of the error comes from the 2021–22 price surge, which no price-only model could anticipate.
 - The differences between methods are modest and haven't been tested for statistical significance.
+- **Out-of-sample check.** Seven months of new prices (April to October 2026) were published after the forecast was committed. The averaged forecast was off by 1.5% on average, in line with the backtest's 1.8% for those horizons, and ETS, the average and SARIMA again led. The 80% interval contained four of the seven prices, which suggests it is too narrow in the first months. My original capstone model, refitted through March 2026, scored 2.4%.
 - **12-month forecast:** about **19.6¢/kWh by March 2027**, up from 19.0¢ in March 2026 (80% interval: 19.1–21.8¢, based on the backtest's own errors).
 
 ## Decision log
@@ -46,6 +47,8 @@ I also set the tone of the revision: it treats the original's gaps as opportunit
 
 **A correction during the revision.** The first draft grouped SARIMA with ETS as the most accurate methods at 1–3 months, based on average error. The consistency check added in this round showed that only ETS beat the drift baseline from most starting points, and the conclusions were changed to match.
 
+**My addition.** After the review, I asked for a section testing the forecasts against the months published since my graduation. That became the out-of-sample check.
+
 **Planned follow-up:** add natural gas prices as an outside driver, which my original capstone proposed as further work.
 
 ## Files
@@ -54,6 +57,7 @@ I also set the tone of the revision: it treats the original's gaps as opportunit
 |---|---|
 | [`electricity_price_forecast.ipynb`](electricity_price_forecast.ipynb) | Full analysis (about 4 minutes to run, mostly `auto_arima`) |
 | [Original reports](../../D214-capstone-electricity-price-forecast/reports/) | Executive summary and slides from the original submission |
-| `data/APU000072610.csv` | Source data from FRED |
+| `data/APU000072610.csv` | Source data from FRED, March 2016 to March 2026 (the capstone's dataset) |
+| `data/APU000072610_bls_2025-01_to_2026-10.csv` | The same series from the BLS public API, downloaded 16 November 2026. Used only for the out-of-sample check. |
 
 **Tools:** pandas, statsmodels (SARIMAX, Holt–Winters, Ljung–Box), pmdarima, matplotlib

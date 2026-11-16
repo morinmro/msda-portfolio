@@ -9,5 +9,6 @@
 | File | Description |
 |---|---|
 | [`D205_queries.sql`](D205_queries.sql) | Table DDL, CSV load and analysis query |
+| [`D205_report.pdf`](D205_report.pdf) | Written report as submitted, including the entity relationship diagram |
 
 **Tools:** PostgreSQL, pgAdmin

@@ -4,6 +4,7 @@ An interactive Tableau dashboard that combines the WGU churn dataset with an ext
 
 | File | Description |
 |---|---|
+| [`D210_report.pdf`](D210_report.pdf) | Written report as submitted: dashboard layout, design decisions, accessibility and audience analysis |
 | *Dashboard* | Not included: the packaged workbook embeds extracts of the WGU churn data. A Tableau Public link and screenshots are coming. |
 
 **Data:** `../data/churn_clean.csv` *(WGU dataset, not included; see [data/README](../data/README.md))*, [`../data/broadband_access.csv`](../data/broadband_access.csv) · **Tools:** Tableau

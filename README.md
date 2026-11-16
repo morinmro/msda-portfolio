@@ -11,7 +11,7 @@ They're kept separate on purpose, so it's clear which work is mine alone and whi
 
 ## Coursework: my original work
 
-The analysis, code and written conclusions in these folders are my own, as submitted for grading. Preparing them for this repository (with Claude's help) added the project READMEs and removed links to course-only videos. It also made a few minimal compatibility fixes so the notebooks run on current library versions; each fix keeps the original behavior. No analysis was redone.
+The analysis, code and written conclusions in these folders are my own, as submitted for grading. Preparing them for this repository (with Claude's help) added the project READMEs and removed links to course-only videos. It also made a few minimal compatibility fixes so the notebooks run on current library versions; each fix keeps the original behavior. No analysis was redone. Every edit is listed in [`CHANGES_FROM_SUBMISSION.md`](CHANGES_FROM_SUBMISSION.md).
 
 ### Featured
 

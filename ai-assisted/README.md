@@ -13,4 +13,4 @@ Each project's notebook opens with a link to the original it revises and ends wi
 
 | Project | Revises | Status | Summary |
 |---|---|---|---|
-| [Forecasting US Electricity Prices](electricity-price-forecast/) | [D214 capstone](../D214-capstone-electricity-price-forecast/) | Revised after my point-by-point review ([decision log](electricity-price-forecast/README.md#decision-log)); final read-through pending | Extends the original's single 30-month test to a 25-origin rolling backtest against simple baselines, and shows which method works best at each horizon. |
+| [Forecasting US Electricity Prices](electricity-price-forecast/) | [D214 capstone](../D214-capstone-electricity-price-forecast/) | Revised after my point-by-point review ([decision log](electricity-price-forecast/README.md#decision-log)); final read-through pending | Extends the original's single 30-month test to a 25-origin rolling backtest against simple baselines, and shows which method works best at each horizon. Includes an out-of-sample check on April–October 2026 and an extension testing natural gas prices as a driver. |

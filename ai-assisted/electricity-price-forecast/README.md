@@ -49,15 +49,23 @@ I also set the tone of the revision: it treats the original's gaps as opportunit
 
 **My addition.** After the review, I asked for a section testing the forecasts against the months published since my graduation. That became the out-of-sample check.
 
-**Planned follow-up:** add natural gas prices as an outside driver, which my original capstone proposed as further work.
+## Extension: natural gas prices
+
+My original capstone proposed adding an outside driver such as natural gas prices. [`natural_gas_extension.ipynb`](natural_gas_extension.ipynb) tests that on the same backtest.
+
+- **A lagged Henry Hub gas price adds little.** With a seven-month lag, chosen from data before the test period, the 1–12 month error went from 2.48% to 2.44%, and the gas model was more accurate from only 13 of 25 starting points.
+- **The result depends on how gas enters the model.** A six-month trailing average did better (2.11%) and a 12-month one did worse (2.67%). Those were tried afterwards, so the better figure is a lead to test on new data, not a finding.
+- **A side finding matters more.** A fixed, standard SARIMA (2.48%) was more accurate than the automatically selected SARIMA in the main notebook (3.34%), and better than every other method there over 1–12 months. The main notebook notes this; its backtest hasn't been rerun with the fixed model.
 
 ## Files
 
 | File | Description |
 |---|---|
 | [`electricity_price_forecast.ipynb`](electricity_price_forecast.ipynb) | Full analysis (about 4 minutes to run, mostly `auto_arima`) |
+| [`natural_gas_extension.ipynb`](natural_gas_extension.ipynb) | Extension: does the Henry Hub gas price improve the forecast? (about 1 minute to run) |
 | [Original reports](../../D214-capstone-electricity-price-forecast/reports/) | Executive summary and slides from the original submission |
 | `data/APU000072610.csv` | Source data from FRED, March 2016 to March 2026 (the capstone's dataset) |
 | `data/APU000072610_bls_2025-01_to_2026-10.csv` | The same series from the BLS public API, downloaded 16 November 2026. Used only for the out-of-sample check. |
+| `data/henry_hub_monthly_eia.csv` | Monthly Henry Hub natural gas spot price from the EIA (series RNGWHHD), January 2014 to October 2026, downloaded 16 November 2026 |
 
 **Tools:** pandas, statsmodels (SARIMAX, Holt–Winters, Ljung–Box), pmdarima, matplotlib

@@ -13,4 +13,4 @@ Each project's notebook opens with a link to the original it revises and ends wi
 
 | Project | Revises | Status | Summary |
 |---|---|---|---|
-| [Forecasting US Electricity Prices](electricity-price-forecast/) | [D214 capstone](../D214-capstone-electricity-price-forecast/) | Draft by Claude; my review is in progress | Replaces a single 30-month holdout with a 25-origin rolling backtest against simple baselines. The original 0.77% MAPE turned out not to be robust. |
+| [Forecasting US Electricity Prices](electricity-price-forecast/) | [D214 capstone](../D214-capstone-electricity-price-forecast/) | Revised after my point-by-point review ([decision log](electricity-price-forecast/README.md#decision-log)); final read-through pending | Extends the original's single 30-month test to a 25-origin rolling backtest against simple baselines, and shows which method works best at each horizon. |

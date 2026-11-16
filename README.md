@@ -17,7 +17,7 @@ The analysis, code and written conclusions in these folders are my own, as submi
 
 | Project | Techniques | Highlight |
 |---|---|---|
-| [**Capstone: US Electricity Price Forecast**](D214-capstone-electricity-price-forecast/) | SARIMA, auto_arima, time-series decomposition | SARIMA forecast of 30 held-out months of FRED price data. *See the [AI-assisted revision](ai-assisted/electricity-price-forecast/) for a robustness re-check.* |
+| [**Capstone: US Electricity Price Forecast**](D214-capstone-electricity-price-forecast/) | SARIMA, auto_arima, time-series decomposition | SARIMA forecast of 30 held-out months of FRED price data. *The [AI-assisted revision](ai-assisted/electricity-price-forecast/) builds on it with a broader evaluation.* |
 | [**Churn Prediction with Random Forest**](D209-data-mining-1/) | Random forest, GridSearchCV, KNN | **0.90 accuracy / 0.957 AUC**, compared against a KNN baseline |
 | [**Review Sentiment Neural Network**](D213-advanced-data-analytics/) | TensorFlow/Keras, NLP, tokenization, embeddings | Binary sentiment classifier on Amazon, IMDb and Yelp reviews |
 | [**Logistic Regression for Churn**](D208-predictive-modeling/) | statsmodels, VIF feature reduction | Received a WGU **Excellence Award** |
@@ -43,7 +43,7 @@ Projects in [`ai-assisted/`](ai-assisted/) were revised with Claude. Each one li
 
 | Project | Revises | What's new |
 |---|---|---|
-| [**Forecasting US Electricity Prices**](ai-assisted/electricity-price-forecast/) | [D214 capstone](D214-capstone-electricity-price-forecast/) | A rolling-origin backtest of SARIMA, ETS and simple baselines across 25 forecast origins. It found that the original 0.77% single-window result wasn't robust, and that a simple drift forecast matches SARIMA beyond 3 months. |
+| [**Forecasting US Electricity Prices**](ai-assisted/electricity-price-forecast/) | [D214 capstone](D214-capstone-electricity-price-forecast/) | Builds on the original with a rolling-origin backtest of SARIMA, exponential smoothing and simple baselines across 25 forecast origins. It shows where each method works best: statistical models for the first few months, simple trend methods further out. |
 
 ## Repository layout
 

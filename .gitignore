@@ -1,0 +1,40 @@
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# Intermediate files regenerated when notebooks run
+**/churn_data_clean.csv
+**/churn_regression_prepared.csv
+**/churn_logreg_prepared.csv
+**/churnfile_*.csv
+**/churn_scaled_df.csv
+**/clean_teleco_*.csv
+**/teleco_timeseries_diffed.csv
+**/all_revs_cleaned.csv
+**/X_*_pad_revs.csv
+**/y_train.csv
+**/y_test.csv
+**/y_val.csv
+*.h5
+*.keras
+
+# Local environment and run logs
+.venv/
+venv/
+.run_*.log
+
+# WGU-provided coursework datasets (not redistributable; see data/README.md)
+data/churn_raw_data.csv
+data/churn_clean.csv
+data/churn_*_data_dictionary.pdf
+D212-data-mining-2/data/teleco_market_basket*
+D213-advanced-data-analytics/data/teleco_time_series*
+# Packaged Tableau workbook with embedded extracts of the WGU churn data
+D210-representation-and-reporting/D210_dashboard.twbx

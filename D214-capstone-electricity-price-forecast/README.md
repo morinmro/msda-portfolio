@@ -1,5 +1,7 @@
 # D214 Capstone: Forecasting US Electricity Prices
 
+> **Revised version:** [`ai-assisted/electricity-price-forecast/`](../ai-assisted/electricity-price-forecast/) re-evaluates this capstone with a rolling-origin backtest against simple baselines (made with Claude). It found the single-window result below isn't robust. This folder keeps my original work as submitted.
+
 **Question:** Can the average monthly price of electricity in the US be accurately forecast from historical pricing data?
 
 **Hypothesis:** A forecast with MAPE < 10% can be built from historical data.

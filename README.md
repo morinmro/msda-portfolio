@@ -2,18 +2,27 @@
 
 **Michael Morin** · M.S. Data Analytics, Western Governors University (2026)
 
-This repository collects my coursework from WGU's MSDA program, from SQL data acquisition and data cleaning through regression, machine learning, deep learning and a time-series capstone. Each folder is a self-contained project with its own README, notebook(s) and data.
+This repository has two parts:
 
-## Featured projects
+1. **[Coursework](#coursework-my-original-work)**: my original work from WGU's MSDA program, as submitted. It runs from SQL data acquisition and data cleaning through regression, machine learning, deep learning and a time-series capstone.
+2. **[AI-assisted revisions](#ai-assisted-revisions)**: selected projects revisited with Claude (Anthropic) as an AI pair analyst. These show what the same questions look like when re-examined with stronger methods, and what I can produce working with an AI partner.
+
+They're kept separate on purpose, so it's clear which work is mine alone and which was done with AI assistance.
+
+## Coursework: my original work
+
+The analysis, code and written conclusions in these folders are my own, as submitted for grading. Preparing them for this repository (with Claude's help) added the project READMEs and removed links to course-only videos. It also made a few minimal compatibility fixes so the notebooks run on current library versions; each fix keeps the original behavior. No analysis was redone.
+
+### Featured
 
 | Project | Techniques | Highlight |
 |---|---|---|
-| [**Capstone: US Electricity Price Forecast**](D214-capstone-electricity-price-forecast/) | SARIMA, auto_arima, time-series decomposition | Forecast 30 months of held-out FRED price data with **0.77% MAPE** |
+| [**Capstone: US Electricity Price Forecast**](D214-capstone-electricity-price-forecast/) | SARIMA, auto_arima, time-series decomposition | SARIMA forecast of 30 held-out months of FRED price data. *See the [AI-assisted revision](ai-assisted/electricity-price-forecast/) for a robustness re-check.* |
 | [**Churn Prediction with Random Forest**](D209-data-mining-1/) | Random forest, GridSearchCV, KNN | **0.90 accuracy / 0.957 AUC**, compared against a KNN baseline |
 | [**Review Sentiment Neural Network**](D213-advanced-data-analytics/) | TensorFlow/Keras, NLP, tokenization, embeddings | Binary sentiment classifier on Amazon, IMDb and Yelp reviews |
 | [**Logistic Regression for Churn**](D208-predictive-modeling/) | statsmodels, VIF feature reduction | Received a WGU **Excellence Award** |
 
-## All projects
+### All courses
 
 | Course | Project | Tools |
 |---|---|---|
@@ -28,14 +37,23 @@ This repository collects my coursework from WGU's MSDA program, from SQL data ac
 | [D213](D213-advanced-data-analytics/) | Advanced Data Analytics: ARIMA revenue forecast, NLP sentiment neural net | statsmodels, pmdarima, TensorFlow |
 | [D214](D214-capstone-electricity-price-forecast/) | Capstone: forecasting US electricity prices | statsmodels, pmdarima |
 
+## AI-assisted revisions
+
+Projects in [`ai-assisted/`](ai-assisted/) were revised with Claude. Each one links back to the original it revises and lists what changed. See [`ai-assisted/README.md`](ai-assisted/README.md) for how the work was split between me and the AI.
+
+| Project | Revises | What's new |
+|---|---|---|
+| [**Forecasting US Electricity Prices**](ai-assisted/electricity-price-forecast/) | [D214 capstone](D214-capstone-electricity-price-forecast/) | A rolling-origin backtest of SARIMA, ETS and simple baselines across 25 forecast origins. It found that the original 0.77% single-window result wasn't robust, and that a simple drift forecast matches SARIMA beyond 3 months. |
+
 ## Repository layout
 
 ```
-├── data/                     # Shared public data; README explains the WGU datasets that aren't included
-├── D2xx-<course-name>/
+├── D2xx-<course-name>/       # Original coursework, one folder per course
 │   ├── README.md             # Research question, methods, results
 │   ├── *.ipynb               # Analysis notebook(s), rendered with outputs
 │   └── data/ | reports/      # Project-specific data and written deliverables
+├── ai-assisted/              # Revisions made with Claude; each links to its original
+├── data/                     # Shared public data; README explains the WGU datasets that aren't included
 └── requirements.txt
 ```
 

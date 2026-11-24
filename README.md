@@ -50,6 +50,8 @@ Projects in [`ai-assisted/`](ai-assisted/) were revised with Claude. Each one li
 | [**Forecasting US Electricity Prices**](ai-assisted/electricity-price-forecast/) | [D214 capstone](D214-capstone-electricity-price-forecast/) | Builds on the original with a rolling-origin backtest of SARIMA, exponential smoothing and simple baselines across 25 forecast origins. It finds that a simple, fixed SARIMA is the most reliable method, checks the forecasts against seven months of newer data, and tests natural gas prices as a driver. |
 | [**Predicting Customer Churn**](ai-assisted/churn-prediction/) | [D208 Task 2](D208-predictive-modeling/), [D209](D209-data-mining-1/) | Four models compared on equal terms, with baselines, cross-validated tuning and a decision section. Logistic regression comes out best (0.96 AUC) once tenure is included. |
 
+**In progress:** I'm currently working on an AI-assisted rework of the [D213 Task 2](D213-advanced-data-analytics/) NLP project (review sentiment with a neural network). It will be added to this table when it's complete.
+
 ## Repository layout
 
 ```

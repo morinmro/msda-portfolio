@@ -83,3 +83,7 @@ Open notebooks from inside their project folder; data paths are relative (`../da
 - **Broadband access**: Kaggle, "Broadband Access" dataset (MMattson, 2021)
 - **Sentiment Labelled Sentences**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences) (Kotzias et al., 2015)
 - **Electricity prices**: [FRED series APU000072610](https://fred.stlouisfed.org/series/APU000072610), Federal Reserve Bank of St. Louis
+
+---
+
+© 2026 Michael Morin. All rights reserved for my original work; see [`COPYRIGHT`](COPYRIGHT).

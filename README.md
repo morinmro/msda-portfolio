@@ -13,6 +13,10 @@ They're kept separate on purpose, so it's clear which work is mine alone and whi
 
 The analysis, code and written conclusions in these folders are my own, as submitted for grading. Preparing them for this repository (with Claude's help) added the project READMEs and removed links to course-only videos. It also made a few minimal compatibility fixes so the notebooks run on current library versions; each fix keeps the original behavior. No analysis was redone. Every edit is listed in [`CHANGES_FROM_SUBMISSION.md`](CHANGES_FROM_SUBMISSION.md).
 
+It should be emphasized that the analyses in this repository were completed as coursework for the Master of Science in Data Analytics program at Western Governors University; as such, they are intended to demonstrate conceptual understanding and technical implementation of specific analytical methods. Each project follows a structure prescribed by the program's assessment rubrics, and that structure may differ from how the same problem would be approached in a professional setting.
+
+Because the coursework emphasized step-by-step application of individual techniques over comprehensive analysis of business problems, certain standard practices are not consistently present, such as establishing a baseline model against which more advanced methods are evaluated. In some instances, the rubrics also required steps to be performed out of sequence or repeated. These projects should therefore be viewed as demonstrations of methodological competency in an academic setting, rather than as representative examples of applied, real-world analysis.
+
 ### Featured
 
 | Project | Techniques | Highlight |
